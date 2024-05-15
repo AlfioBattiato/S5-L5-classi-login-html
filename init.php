@@ -1,5 +1,6 @@
 <?php
-include_once __DIR__.'/classi/utente.php'; 
+
+include_once __DIR__ . '/classi/utente.php';
 $servername = "localhost";
 $username = "root"; // Cambia questo se il tuo utente MySQL non è 'root'
 $password = ""; // Cambia questo con la password del tuo utente MySQL

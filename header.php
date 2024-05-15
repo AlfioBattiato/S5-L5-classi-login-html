@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -18,8 +19,7 @@
             <span class="navbar-brand mb-0 h1">CaseInAffitto</span>
             <div>
 
-                <a class='fw-bold' href="index.php">Esci</a>
-                <a class='fw-bold' href="inserisci.php">Inserisci</a>
+                <a class='fw-bold' href="destroy.php">Esci</a>
             </div>
         </div>
 

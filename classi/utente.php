@@ -17,6 +17,7 @@ class Utente{
         if ($user) {
             if ($password=== $user['password']) {
                 // Login riuscito
+                $_SESSION["utente"] = true;
                 header("Location: admin.php");
                 exit(); // Importante per interrompere l'esecuzione del codice
             } else {
@@ -24,6 +25,9 @@ class Utente{
             }
         } else {
             echo "Nome utente o password errati2.";
+            $_SESSION["utente"] = false;
+
+            
         }
     }
 

@@ -1,7 +1,7 @@
 <?php
-include_once __DIR__.'/init.php'; 
-include_once __DIR__.'/classi/utente.php'; 
-
+include_once __DIR__ . '/init.php';
+include_once __DIR__ . '/classi/utente.php';
+session_start();
 
 
 
@@ -12,13 +12,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $utente = $_POST['utente'];
         $password = $_POST['password'];
 
-        
-
-      $utente1=new Utente($utente,$password,$pdo);
-   
 
 
+        $utente1 = new Utente($utente, $password, $pdo);
      
+      
+        
+        
+        
+        
     } else {
         echo "Nome utente o password non specificati.";
     }
